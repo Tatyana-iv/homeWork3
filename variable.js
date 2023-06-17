@@ -18,7 +18,7 @@
 // // задание 3 //
 // let d = 102;
 // let e = 99;
-// if (d || e >100) {
+// if (d >100 || e >100) {
 //     console.log ('верно');
 // } else {
 //     console.log ('не верно');
@@ -27,7 +27,7 @@
 // //задание 4//
 // let a = '2';
 // let b = '3';
-// alert ( 2 + 3);
+// alert (Number(a) + Number(b));
 
 //задание 5//
 // let monthNumber = +prompt('Введите месяц в виде числа');
