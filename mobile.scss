@@ -17,6 +17,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        height: 735px;
         &__title {
             width: 343px;
             &-big {
@@ -43,11 +44,13 @@
         &__button {
             display: flex;
             align-items: center;
+            width: 234px;
+            height: 48px;
         }
     
     }
     .cart {
-        height: 1220px;
+        height: 1221px;
         background-size: cover;
         background-color: #000915;
         padding-top: 128px;
@@ -73,20 +76,17 @@
 
     .page {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: center;
         align-content: center;
         flex-wrap: wrap;
-    
-
+        height: 654px;
         &__title-big {
             width: 266px;
             height: 49px;
             font-size: 32px;
             line-height: 39px;
-            
         }
-
         &__text {
             width: 343px;
             height: 66px;
@@ -103,13 +103,56 @@
             align-items: center;
             text-align: center;
         }
-
         &__img {
             display: none;
         }
         &__mob-img {
             display: flex;
             padding-bottom: 85px;
+        }
+        &__button {
+            width: 234px;
+            height: 48px;
+        }
+    }
+
+    .box {
+        height: 653px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+        flex-wrap: wrap;
+        &__img {
+            display: none;
+        }
+        &__mob-img {
+            display: flex;
+            padding-bottom: 85px;
+        }
+        &__title {
+            display: flex;
+            align-items: center;
+            text-align: center;
+        }
+        &__title-big {
+            width: 264px;
+            height: 39px;
+            font-size: 32px;
+            line-height: 39px;
+        }
+        &__text {
+            width: 343px;
+            height: 66px;
+            font-size: 14px;
+            line-height: 22px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+        }
+        &__button {
+            width: 234px;
+            height: 48px;
         }
     }
 }

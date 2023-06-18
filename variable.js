@@ -1,60 +1,48 @@
 // задание 1//
-// let password = '123abvg';
-// let enterPassword = prompt('Введите пароль');
-// if (password === enterPassword) {
-//     alert('Пароль введен верно');
-// } else {
-//     alert('Пароль введен неверно');
+// let i = 0;
+// while (i <2) {
+//     console.log ("Привет");
+//     i++
 // }
-
 // задание 2//
-// let c = prompt('введите число') ;
-// if (c > 0 && c<10){ 
-//     console.log('верно')}
-//      else {
-//     console.log ('не верно')};
-
-
-// // задание 3 //
-// let d = 102;
-// let e = 99;
-// if (d >100 || e >100) {
-//     console.log ('верно');
-// } else {
-//     console.log ('не верно');
+// let i = 1;
+// while (i <= 5) {
+//     console.log(i);
+//     i++;
+// }
+// задание 3//
+// let i = 7;
+// while (i >= 7 && i<=22) {
+//     console.log(i);
+//     i++;
 // }
 
-// //задание 4//
-// let a = '2';
-// let b = '3';
-// alert (Number(a) + Number(b));
+//задание 4//
+// const obj = {
+//     "Коля": "200",
+//     "Вася": "300",
+//     "Петя": "400",
+//   }
+  
+//   for (const key in obj) {
+//     console.log(`${key}-зарплата-${obj[key]} долларов`);
+//   }
 
-//задание 5//
-// let monthNumber = +prompt('Введите месяц в виде числа');
-
-// switch ( monthNumber) {
-//     case 1:
-//     case 2:
-//     case 12:        
-//         console.log ('зима');
-//         break;
-//     case 3:
-//     case 4:
-//     case 5:
-//         console.log ('весна');
-//         break;
-//     case 6:
-//     case 7:
-//     case 8:    
-//         console.log ('лето');
-//         break;
-//     case 9:
-//     case 10:
-//     case 11:
-//         console.log ('осень');
-//         break;
-//      default :
-//         console.log ('Такого месяца не существует');
-//         break;
+// задание 5//
+// let n = 1000;
+// let num = 0;
+// while (n >= 50) {
+//   n /= 2;
+//   num++;
 // }
+// console.log(`Число после деления: ${n}`);
+// console.log(`Количество итераций: ${num}`);
 
+//задание 6//
+// const firstFriday = 5; // предположим, что первая пятница месяца приходится на 4 число
+
+// for (let day = 1; day <= 31; day++) {
+//   if ((day - firstFriday) % 7 === 0) {
+//     console.log(`Сегодня пятница ${day}-е число. Необходимо подготовить отчёт.`);
+//   }
+// }
