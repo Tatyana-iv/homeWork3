@@ -1,140 +1,118 @@
-// задание 1
-// function minNumber(a, b) {
-//     return (a < b) ? a : b;
+//задание 1
+
+// const arr = [1, 5, 4, 10, 0, 3];
+// for (let i = 0; i < arr.length; i++) {
+//   console.log(arr[i]);
+//   if (arr[i] === 10) {
+//     break;
+//   }
 // }
-
-// console.log(minNumber(8, 4)); // 4
-// console.log(minNumber(6, 6)); // 6
-
 
 
 //задание 2
-// function checkParity(number) {
-//     if (number % 2 === 0) {
-//         return "Число четное";
-//     } else {
-//         return "Число нечетное";
-//     }
-// }
 
-// let number = 5;
-// console.log(checkParity(number));
-
-// number = 8;
-// console.log(checkParity(number));
+// const arr = [1, 5, 4, 10, 0, 3];
+// const index = arr.indexOf(4);
+// console.log(index);
 
 
+//задание 3
 
-//задание 3.1
-// function printSquare(number) {
-//     console.log(number ** 2);
-// }
-
-// let number = 4;
-// printSquare(number);
-
-
-
-//задание 3.2
-// function getSquare(number) {
-//     return number ** 2;
-// }
-
-// let number = 4;
-// console.log(getSquare(number));
-
+// const arr = [1, 3, 5, 10, 20];
+// const str = arr.join(' ');
+// console.log(str); 
 
 
 //задание 4
-// function greeting() {
-//     const age = parseInt(prompt("Сколько вам лет? "));
-//     if (age < 0) {
-//         console.log("Вы ввели неправильное значение");
-//     } else if (age <= 12) {
-//         console.log("Привет, друг!");
-//     } else {
-//         console.log("Добро пожаловать!");
-//     }
+
+// const arr = [];
+// for (let i = 0; i < 3; i++) {
+//   arr[i] = [];
+//   for (let j = 0; j < 3; j++) {
+//     arr[i][j] = 1;
+//   }
 // }
-
-// greeting();
-
+// console.log(arr);
 
 
 //задание 5
-// function mulNumbers(a, b) {
-//     if (typeof a !== 'number' || typeof b !== 'number') {
-//         return "Одно или оба значения не являются числом";
-//     } else {
-//         return a * b;
-//     }
-// }
 
-// console.log(mulNumbers(2, 3));
-// console.log(mulNumbers("two", 3));
-
+// const arr = [1, 1, 1];
+// arr.push(2, 2, 2);
+// console.log(arr); 
 
 
 //задание 6
-// function cubeNumber() {
-//     const n = prompt("Введите число: ");
 
-//     if (isNaN(n)) {
-//         return "Переданный параметр не является числом";
-//     }
-
-//     const num = parseInt(n);
-//     return `${num} в кубе равняется ${num ** 3}`;
+// const arr = [9, 8, 7, 'a', 6, 5];
+// arr.sort();
+// for (let i = 0; i < arr.length; i++) {
+//   if (arr[i] === 'a') {
+//     arr.splice(i, 1);
+//   }
 // }
-
-// console.log(cubeNumber());
-
-
+// console.log(arr); 
 
 
 //задание 7
-// class Circle {
-//     constructor(radius) {
-//         this.radius = radius;
-//     }
 
-//     getArea() {
-//         return Math.PI * this.radius ** 2;
-//     }
-
-//     getPerimeter() {
-//         return 2 * Math.PI * this.radius;
-//     }
+// const arr = [9, 8, 7, 6, 5];
+// const guess = parseInt(prompt('Угадайте число'));
+// if (arr.includes(guess)) {
+//   alert('Угадал');
+// } else {
+//   alert('Не угадал');
 // }
 
-// const circle1 = new Circle(3);
-// const circle2 = new Circle(5);
 
-// console.log(circle1.getArea());
-// console.log(circle1.getPerimeter());
-// console.log(circle2.getArea());
-// console.log(circle2.getPerimeter());
+//задание 8
 
-// задание 8
+// const str = 'abcdef';
+// const reversedStr = str.split('').reverse().join('');
+// console.log(reversedStr);
 
-function season_by_month(month) {
-    if (1 <= month && month <= 12) {
-        if (3 <= month && month <= 5) {
-            return "Весна";
-        } else if (6 <= month && month <= 8) {
-            return "Лето";
-        } else if (9 <= month && month <= 11) {
-            return "Осень";
-        } else {
-            return "Зима";
-        }
-    } else {
-        return "Неправильный параметр";
-    }
-}
+//задание 9
 
-console.log(season_by_month(3));  
-console.log(season_by_month(7)); 
-console.log(season_by_month(11)); 
-console.log(season_by_month(1)); 
-console.log(season_by_month(50)); 
+// const arr = [[1, 2, 3], [4, 5, 6]];
+// const newArr = arr.flat();
+// console.log(newArr);
+
+//задание 10
+
+// const arr = [1, 3, 2, 4, 5, 7, 6, 8, 9, 10];
+// for (let i = 0; i < arr.length - 1; i++) {
+//   console.log(arr[i] + arr[i + 1]);
+// }
+
+//задание 11
+
+// function squareArray(arr) {
+//     const newArr = arr.map(num => num ** 2);
+//     return newArr;
+//   }
+//   const arr = [1, 2, 3, 4, 5];
+//   const squaredArr = squareArray(arr);
+//   console.log(squaredArr); 
+
+//задание 12
+
+// function getLengthWords(arr) {
+//     const newArr = arr.map(word => word.length);
+//     return newArr;
+//   }
+//   const arr = ['слово', '', 'слог', 'длинное предложение', 'буква'];
+//   const lengthArr = getLengthWords(arr);
+//   console.log(lengthArr);
+
+//задание 13
+
+// function filterPositive(arr) {
+//     const filteredArr = arr.filter(num => num < 0);
+//     return filteredArr;
+//   }
+//   const arr = [-1, 0, 5, -10, 56];
+//   const filteredArr = filterPositive(arr);
+//   console.log(filteredArr); 
+//   const arr2 = [-25, 25, 0, -1000, -2];
+//   const filteredArr2 = filterPositive(arr2);
+//   console.log(filteredArr2); 

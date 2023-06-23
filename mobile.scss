@@ -16,8 +16,11 @@
         justify-content: center;
         align-items: center;
         height: 735px;
+
         &__title {
             width: 343px;
+            justify-content: center;
+
             &-big {
                 font-size: 32px;
                 line-height: 39px;
@@ -27,6 +30,7 @@
                 width: 261px;
                 height: 39px;
             }
+
             &-text {
                 width: 343px;
                 height: 110px;
@@ -37,21 +41,23 @@
                 text-align: center;
                 flex-wrap: wrap;
             }
-        
+
         }
+
         &__button {
             display: flex;
             align-items: center;
             width: 234px;
             height: 48px;
         }
-    
+
     }
+
     .cart {
         height: 1221px;
         background-size: cover;
         background-color: #000915;
-        
+
         &-wrapp {
             display: flex;
             flex-wrap: wrap;
@@ -78,12 +84,14 @@
         align-content: center;
         flex-wrap: wrap;
         height: 654px;
+
         &__title-big {
             width: 266px;
             height: 49px;
             font-size: 32px;
             line-height: 39px;
         }
+
         &__text {
             width: 343px;
             height: 66px;
@@ -93,6 +101,7 @@
             align-items: center;
             text-align: center;
         }
+
         &__box {
             padding-top: 64px;
             padding-bottom: 64px;
@@ -100,13 +109,16 @@
             align-items: center;
             text-align: center;
         }
+
         &__img {
             display: none;
         }
+
         &__mob-img {
             display: flex;
             padding-bottom: 85px;
         }
+
         &__button {
             width: 234px;
             height: 48px;
@@ -120,24 +132,29 @@
         justify-content: center;
         align-content: center;
         flex-wrap: wrap;
+
         &__img {
             display: none;
         }
+
         &__mob-img {
             display: flex;
             padding-bottom: 85px;
         }
+
         &__title {
             display: flex;
             align-items: center;
             text-align: center;
         }
+
         &__title-big {
             width: 264px;
             height: 39px;
             font-size: 32px;
             line-height: 39px;
         }
+
         &__text {
             width: 343px;
             height: 66px;
@@ -147,6 +164,7 @@
             align-items: center;
             text-align: center;
         }
+
         &__button {
             width: 234px;
             height: 48px;
@@ -155,10 +173,10 @@
 
     .bottom {
 
-        &__title{
-        font-size: 32px;
-        line-height: 39px;
-        text-align: center;
+        &__title {
+            font-size: 32px;
+            line-height: 39px;
+            text-align: center;
 
             &-text {
                 font-size: 14px;
@@ -166,7 +184,8 @@
                 text-align: center;
             }
         }
-         &__button {
+
+        &__button {
             display: flex;
             align-items: center;
             width: 234px;
