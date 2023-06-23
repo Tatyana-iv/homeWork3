@@ -136,6 +136,7 @@
 }
 
 .page {
+
     height: 800px;
     background: #000915;
     display: flex;
@@ -185,9 +186,6 @@
         font-family: 'Montserrat';
     }
 
-    &__mob-img {
-        display: none;
-    }
 }
 
 .box {
@@ -198,10 +196,6 @@
     align-items: center;
     justify-content: space-between;
     column-gap: 135px;
-
-    &__mob-img {
-        display: none;
-    }
 
     &__title {
         display: flex;
@@ -246,7 +240,7 @@
 
 .bottom {
     height: 800px;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0) -7.35%, #000915 100%), url(bcgFoot.jpg),
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) -7.35%, #000915 100%), url(img/bcgFoot.jpg),
         linear-gradient(180deg, #000915 0%, rgba(0, 0, 0, 0) 100%),
         linear-gradient(0deg, #000915, #000915);
     background-size: cover;
