@@ -1,60 +1,118 @@
-// задание 1//
-// let password = '123abvg';
-// let enterPassword = prompt('Введите пароль');
-// if (password === enterPassword) {
-//     alert('Пароль введен верно');
+//задание 1
+
+// const arr = [1, 5, 4, 10, 0, 3];
+// for (let i = 0; i < arr.length; i++) {
+//   console.log(arr[i]);
+//   if (arr[i] === 10) {
+//     break;
+//   }
+// }
+
+
+//задание 2
+
+// const arr = [1, 5, 4, 10, 0, 3];
+// const index = arr.indexOf(4);
+// console.log(index);
+
+
+//задание 3
+
+// const arr = [1, 3, 5, 10, 20];
+// const str = arr.join(' ');
+// console.log(str); 
+
+
+//задание 4
+
+// const arr = [];
+// for (let i = 0; i < 3; i++) {
+//   arr[i] = [];
+//   for (let j = 0; j < 3; j++) {
+//     arr[i][j] = 1;
+//   }
+// }
+// console.log(arr);
+
+
+//задание 5
+
+// const arr = [1, 1, 1];
+// arr.push(2, 2, 2);
+// console.log(arr); 
+
+
+//задание 6
+
+// const arr = [9, 8, 7, 'a', 6, 5];
+// arr.sort();
+// for (let i = 0; i < arr.length; i++) {
+//   if (arr[i] === 'a') {
+//     arr.splice(i, 1);
+//   }
+// }
+// console.log(arr); 
+
+
+//задание 7
+
+// const arr = [9, 8, 7, 6, 5];
+// const guess = parseInt(prompt('Угадайте число'));
+// if (arr.includes(guess)) {
+//   alert('Угадал');
 // } else {
-//     alert('Пароль введен неверно');
+//   alert('Не угадал');
 // }
 
-// задание 2//
-// let c = prompt('введите число') ;
-// if (c > 0 && c<10){ 
-//     console.log('верно')}
-//      else {
-//     console.log ('не верно')};
 
+//задание 8
 
-// // задание 3 //
-// let d = 101;
-// let e = 99;
-// if (d || e >100) {
-//     console.log ('верно');
-// } else {
-//     console.log ('не верно');
+// const str = 'abcdef';
+// const reversedStr = str.split('').reverse().join('');
+// console.log(reversedStr);
+
+//задание 9
+
+// const arr = [[1, 2, 3], [4, 5, 6]];
+// const newArr = arr.flat();
+// console.log(newArr);
+
+//задание 10
+
+// const arr = [1, 3, 2, 4, 5, 7, 6, 8, 9, 10];
+// for (let i = 0; i < arr.length - 1; i++) {
+//   console.log(arr[i] + arr[i + 1]);
 // }
 
-// //задание 4//
-// let a = '2';
-// let b = '3';
-// alert ( 2 + 3);
+//задание 11
 
-//задание 5//
-// let monthNumber = +prompt('Введите месяц в виде числа');
+// function squareArray(arr) {
+//     const newArr = arr.map(num => num ** 2);
+//     return newArr;
+//   }
+//   const arr = [1, 2, 3, 4, 5];
+//   const squaredArr = squareArray(arr);
+//   console.log(squaredArr); 
 
-// switch ( monthNumber) {
-//     case 1:
-//     case 2:
-//     case 12:        
-//         console.log ('зима');
-//         break;
-//     case 3:
-//     case 4:
-//     case 5:
-//         console.log ('весна');
-//         break;
-//     case 6:
-//     case 7:
-//     case 8:    
-//         console.log ('лето');
-//         break;
-//     case 9:
-//     case 10:
-//     case 11:
-//         console.log ('осень');
-//         break;
-//      default :
-//         console.log ('Такого месяца не существует');
-//         break;
-// }
+//задание 12
 
+// function getLengthWords(arr) {
+//     const newArr = arr.map(word => word.length);
+//     return newArr;
+//   }
+//   const arr = ['слово', '', 'слог', 'длинное предложение', 'буква'];
+//   const lengthArr = getLengthWords(arr);
+//   console.log(lengthArr);
+
+//задание 13
+
+// function filterPositive(arr) {
+//     const filteredArr = arr.filter(num => num < 0);
+//     return filteredArr;
+//   }
+//   const arr = [-1, 0, 5, -10, 56];
+//   const filteredArr = filterPositive(arr);
+//   console.log(filteredArr); 
+//   const arr2 = [-25, 25, 0, -1000, -2];
+//   const filteredArr2 = filterPositive(arr2);
+//   console.log(filteredArr2); 
