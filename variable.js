@@ -1,60 +1,103 @@
-// задание 1//
-// let password = '123abvg';
-// let enterPassword = prompt('Введите пароль');
-// if (password === enterPassword) {
-//     alert('Пароль введен верно');
-// } else {
-//     alert('Пароль введен неверно');
+// Задание 1
+// let str = 'js';
+// let upperCaseStr = str.toUpperCase();
+// console.log(upperCaseStr); 
+
+
+// // Задание 2
+// function searchStart(arr, str) {
+//   let result = arr.filter(item => item.toLowerCase().startsWith(str.toLowerCase()));
+//   return result;
 // }
 
-// задание 2//
-// let c = prompt('введите число') ;
-// if (c > 0 && c<10){ 
-//     console.log('верно')}
-//      else {
-//     console.log ('не верно')};
+// console.log(searchStart(['Кошка', 'Кит', 'Комар', 'Носорог'], 'ко')); 
+// console.log(searchStart(['яблоко', 'груша', 'гриб', 'огурец'], 'гру')); 
+// console.log(searchStart(['Дом', 'Банк', 'Больница', 'Театр'], 'Кино')); 
 
 
-// // задание 3 //
-// let d = 101;
-// let e = 99;
-// if (d || e >100) {
-//     console.log ('верно');
-// } else {
-//     console.log ('не верно');
+// // Задание 3
+// let num = 32.58884;
+// console.log(Math.floor(num));
+// console.log(Math.ceil(num)); 
+// console.log(Math.round(num)); 
+
+
+// // Задание 4
+// let numbers = [52, 53, 49, 77, 21, 32];
+// let minNumber = Math.min(...numbers);
+// let maxNumber = Math.max(...numbers);
+
+// console.log(`Наименьшее число: ${minNumber}`);
+// console.log(`Наибольшее число: ${maxNumber}`);
+
+
+// // Задание 5
+// function getRandomNumber() {
+//   let randomNum = Math.floor(Math.random() * 10) + 1;
+//   console.log(randomNum);
 // }
 
-// //задание 4//
-// let a = '2';
-// let b = '3';
-// alert ( 2 + 3);
+// getRandomNumber(); // выводит рандомное число от 1 до 10
 
-//задание 5//
-// let monthNumber = +prompt('Введите месяц в виде числа');
 
-// switch ( monthNumber) {
-//     case 1:
-//     case 2:
-//     case 12:        
-//         console.log ('зима');
-//         break;
-//     case 3:
-//     case 4:
-//     case 5:
-//         console.log ('весна');
-//         break;
-//     case 6:
-//     case 7:
-//     case 8:    
-//         console.log ('лето');
-//         break;
-//     case 9:
-//     case 10:
-//     case 11:
-//         console.log ('осень');
-//         break;
-//      default :
-//         console.log ('Такого месяца не существует');
-//         break;
+// // Задание 6
+// function getRandomArrNumbers(num) {
+//   let arr = [];
+//   let len = Math.floor(num / 2);
+//   for (let i = 0; i < len; i++) {
+//     arr.push(Math.floor(Math.random() * (num + 1)));
+//   }
+//   return arr;
 // }
 
+// console.log(getRandomArrNumbers(7)); 
+// console.log(getRandomArrNumbers(12)); 
+
+
+
+// // Задание 7
+// function getRandomInt(min, max) {
+//   return Math.floor(Math.random() * (max - min + 1)) + min;
+// }
+
+// console.log(getRandomInt(1, 10)); 
+
+
+// // Задание 8
+// let currentDate = new Date();
+// console.log(currentDate.toLocaleString()); 
+
+// // Задание 9
+// let currentDate = new Date();
+// currentDate.setDate(currentDate.getDate() + 73);
+// console.log(currentDate.toLocaleDateString()); 
+
+
+// // Задание 10
+// function formatDate(date) {
+//     const months = [
+//         "января", "февраля", "марта",
+//         "апреля", "мая", "июня", "июля",
+//         "августа", "сентября", "октября",
+//         "ноября", "декабря"
+//     ];
+
+//     const days = [
+//         "воскресенье", "понедельник", "вторник", "среда",
+//         "четверг", "пятница", "суббота"
+//     ];
+
+//     let dayOfWeek = days[date.getDay()];
+//     let dayOfMonth = date.getDate();
+//     let month = months[date.getMonth()];
+//     let year = date.getFullYear();
+
+//     let hours = String(date.getHours()).padStart(2, '0');
+//     let minutes = String(date.getMinutes()).padStart(2, '0');
+//     let seconds = String(date.getSeconds()).padStart(2, '0');
+
+//     return `Дата: ${dayOfMonth} ${month} ${year} - это ${dayOfWeek}. Время: ${hours}:${minutes}:${seconds}`;
+// }
+
+// let date = new Date(); 
+// console.log(formatDate(date));
