@@ -12,7 +12,9 @@ function season_by_month(month) {
     }
   }
   
-  season_by_month(3); // Весна
-  season_by_month(6); // Лето
-  season_by_month(9); // Осень
-  season_by_month(13); // Неправильный номер месяца
+  // season_by_month(3); 
+  // season_by_month(6); 
+  // season_by_month(9); 
+  // season_by_month(13); 
+
+  

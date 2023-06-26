@@ -1,118 +1,103 @@
-//задание 1
+// Задание 1
+// let str = 'js';
+// let upperCaseStr = str.toUpperCase();
+// console.log(upperCaseStr); 
 
-// const arr = [1, 5, 4, 10, 0, 3];
-// for (let i = 0; i < arr.length; i++) {
-//   console.log(arr[i]);
-//   if (arr[i] === 10) {
-//     break;
-//   }
+
+// // Задание 2
+// function searchStart(arr, str) {
+//   let result = arr.filter(item => item.toLowerCase().startsWith(str.toLowerCase()));
+//   return result;
 // }
 
-
-//задание 2
-
-// const arr = [1, 5, 4, 10, 0, 3];
-// const index = arr.indexOf(4);
-// console.log(index);
+// console.log(searchStart(['Кошка', 'Кит', 'Комар', 'Носорог'], 'ко')); 
+// console.log(searchStart(['яблоко', 'груша', 'гриб', 'огурец'], 'гру')); 
+// console.log(searchStart(['Дом', 'Банк', 'Больница', 'Театр'], 'Кино')); 
 
 
-//задание 3
-
-// const arr = [1, 3, 5, 10, 20];
-// const str = arr.join(' ');
-// console.log(str); 
-
-
-//задание 4
-
-// const arr = [];
-// for (let i = 0; i < 3; i++) {
-//   arr[i] = [];
-//   for (let j = 0; j < 3; j++) {
-//     arr[i][j] = 1;
-//   }
-// }
-// console.log(arr);
+// // Задание 3
+// let num = 32.58884;
+// console.log(Math.floor(num));
+// console.log(Math.ceil(num)); 
+// console.log(Math.round(num)); 
 
 
-//задание 5
+// // Задание 4
+// let numbers = [52, 53, 49, 77, 21, 32];
+// let minNumber = Math.min(...numbers);
+// let maxNumber = Math.max(...numbers);
 
-// const arr = [1, 1, 1];
-// arr.push(2, 2, 2);
-// console.log(arr); 
-
-
-//задание 6
-
-// const arr = [9, 8, 7, 'a', 6, 5];
-// arr.sort();
-// for (let i = 0; i < arr.length; i++) {
-//   if (arr[i] === 'a') {
-//     arr.splice(i, 1);
-//   }
-// }
-// console.log(arr); 
+// console.log(`Наименьшее число: ${minNumber}`);
+// console.log(`Наибольшее число: ${maxNumber}`);
 
 
-//задание 7
-
-// const arr = [9, 8, 7, 6, 5];
-// const guess = parseInt(prompt('Угадайте число'));
-// if (arr.includes(guess)) {
-//   alert('Угадал');
-// } else {
-//   alert('Не угадал');
+// // Задание 5
+// function getRandomNumber() {
+//   let randomNum = Math.floor(Math.random() * 10) + 1;
+//   console.log(randomNum);
 // }
 
+// getRandomNumber(); // выводит рандомное число от 1 до 10
 
-//задание 8
 
-// const str = 'abcdef';
-// const reversedStr = str.split('').reverse().join('');
-// console.log(reversedStr);
-
-//задание 9
-
-// const arr = [[1, 2, 3], [4, 5, 6]];
-// const newArr = arr.flat();
-// console.log(newArr);
-
-//задание 10
-
-// const arr = [1, 3, 2, 4, 5, 7, 6, 8, 9, 10];
-// for (let i = 0; i < arr.length - 1; i++) {
-//   console.log(arr[i] + arr[i + 1]);
+// // Задание 6
+// function getRandomArrNumbers(num) {
+//   let arr = [];
+//   let len = Math.floor(num / 2);
+//   for (let i = 0; i < len; i++) {
+//     arr.push(Math.floor(Math.random() * (num + 1)));
+//   }
+//   return arr;
 // }
 
-//задание 11
+// console.log(getRandomArrNumbers(7)); 
+// console.log(getRandomArrNumbers(12)); 
 
-// function squareArray(arr) {
-//     const newArr = arr.map(num => num ** 2);
-//     return newArr;
-//   }
-//   const arr = [1, 2, 3, 4, 5];
-//   const squaredArr = squareArray(arr);
-//   console.log(squaredArr); 
 
-//задание 12
 
-// function getLengthWords(arr) {
-//     const newArr = arr.map(word => word.length);
-//     return newArr;
-//   }
-//   const arr = ['слово', '', 'слог', 'длинное предложение', 'буква'];
-//   const lengthArr = getLengthWords(arr);
-//   console.log(lengthArr);
+// // Задание 7
+// function getRandomInt(min, max) {
+//   return Math.floor(Math.random() * (max - min + 1)) + min;
+// }
 
-//задание 13
+// console.log(getRandomInt(1, 10)); 
 
-// function filterPositive(arr) {
-//     const filteredArr = arr.filter(num => num < 0);
-//     return filteredArr;
-//   }
-//   const arr = [-1, 0, 5, -10, 56];
-//   const filteredArr = filterPositive(arr);
-//   console.log(filteredArr); 
-//   const arr2 = [-25, 25, 0, -1000, -2];
-//   const filteredArr2 = filterPositive(arr2);
-//   console.log(filteredArr2); 
+
+// // Задание 8
+// let currentDate = new Date();
+// console.log(currentDate.toLocaleString()); 
+
+// // Задание 9
+// let currentDate = new Date();
+// currentDate.setDate(currentDate.getDate() + 73);
+// console.log(currentDate.toLocaleDateString()); 
+
+
+// // Задание 10
+// function formatDate(date) {
+//     const months = [
+//         "января", "февраля", "марта",
+//         "апреля", "мая", "июня", "июля",
+//         "августа", "сентября", "октября",
+//         "ноября", "декабря"
+//     ];
+
+//     const days = [
+//         "воскресенье", "понедельник", "вторник", "среда",
+//         "четверг", "пятница", "суббота"
+//     ];
+
+//     let dayOfWeek = days[date.getDay()];
+//     let dayOfMonth = date.getDate();
+//     let month = months[date.getMonth()];
+//     let year = date.getFullYear();
+
+//     let hours = String(date.getHours()).padStart(2, '0');
+//     let minutes = String(date.getMinutes()).padStart(2, '0');
+//     let seconds = String(date.getSeconds()).padStart(2, '0');
+
+//     return `Дата: ${dayOfMonth} ${month} ${year} - это ${dayOfWeek}. Время: ${hours}:${minutes}:${seconds}`;
+// }
+
+// let date = new Date(); 
+// console.log(formatDate(date));

@@ -433,4 +433,56 @@
     font-size: 18px;
     line-height: 22px;
   }
+}
+@media only screen and (max-width: 767px) {
+  .center {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 0;
+  }
+  .head__title {
+    display: flex;
+    align-items: center;
+    align-self: center;
+    text-align: center;
+  }
+  .page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 50px;
+  }
+  .page__box {
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+  .page__text {
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+  .box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 50px;
+    height: 1000px;
+  }
+  .box__title {
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+  .box__text {
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
 }/*# sourceMappingURL=style.css.map */
