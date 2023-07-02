@@ -1,60 +1,80 @@
-// задание 1//
-// let password = '123abvg';
-// let enterPassword = prompt('Введите пароль');
-// if (password === enterPassword) {
-//     alert('Пароль введен верно');
-// } else {
-//     alert('Пароль введен неверно');
-// }
+//задание 1
 
-// задание 2//
-// let c = prompt('введите число') ;
-// if (c > 0 && c<10){ 
-//     console.log('верно')}
-//      else {
-//     console.log ('не верно')};
+// const people = [
+//     { name: 'Глеб', age: 29 },
+//     { name: 'Анна', age: 17 },
+//     { name: 'Олег', age: 7 },
+//     { name: 'Оксана', age: 47 }
+//  ];
+ 
+//  people.sort((a, b) => a.age - b.age);
+//  console.log(people);
 
+//задание 2
 
-// // задание 3 //
-// let d = 101;
-// let e = 99;
-// if (d || e >100) {
-//     console.log ('верно');
-// } else {
-//     console.log ('не верно');
-// }
+// function filter(arr, ruleFunction) {
+//     return arr.map(item => {
+//        if (ruleFunction(item)) {
+//           return item;
+//        }
+//     }).filter(Boolean);
+//  }
+ 
+//  function isPositive(num) {
+//     return num > 0;
+//  }
+ 
+//  function isMale(person) {
+//     return person.gender === 'male';
+//  }
+ 
+//  console.log(filter([3, -4, 1, 9], isPositive)); 
+ 
+//  const people = [
+//     {name: 'Глеб', gender: 'male'},
+//     {name: 'Анна', gender: 'female'},
+//     {name: 'Олег', gender: 'male'},
+//     {name: 'Оксана', gender: 'female'}
+//  ];
+ 
+//  console.log(filter(people, isMale)); 
 
-// //задание 4//
-// let a = '2';
-// let b = '3';
-// alert ( 2 + 3);
+//задание 3
+// let counter = 0;
 
-//задание 5//
-// let monthNumber = +prompt('Введите месяц в виде числа');
+// const intervalId = setInterval(() => {
+//    console.log(new Date());
+//    counter += 3;
 
-// switch ( monthNumber) {
-//     case 1:
-//     case 2:
-//     case 12:        
-//         console.log ('зима');
-//         break;
-//     case 3:
-//     case 4:
-//     case 5:
-//         console.log ('весна');
-//         break;
-//     case 6:
-//     case 7:
-//     case 8:    
-//         console.log ('лето');
-//         break;
-//     case 9:
-//     case 10:
-//     case 11:
-//         console.log ('осень');
-//         break;
-//      default :
-//         console.log ('Такого месяца не существует');
-//         break;
-// }
+//    if (counter >= 30) {
+//       clearInterval(intervalId);
+//       console.log('30 секунд прошло');
+//    }
+// }, 3000);
 
+//задание 4
+
+// function delayForSecond(callback) {
+//     setTimeout(callback, 1000); 
+//   }
+  
+//   delayForSecond(function() {
+//     console.log('Привет, Глеб!');
+//   });
+
+//задание 5
+
+// function delayForSecond(cb) {
+//     setTimeout(() => {
+//       if (cb) {
+//         cb();
+//       }
+//       console.log('Прошла одна секунда');
+//     }, 1000);
+//   }
+  
+//   function sayHi(name) {
+//     console.log(`Привет, ${name}!`);
+//   }
+  
+//   delayForSecond(() => sayHi(`Глеб`));
