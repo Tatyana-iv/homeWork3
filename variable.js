@@ -1,103 +1,80 @@
-// Задание 1
-// let str = 'js';
-// let upperCaseStr = str.toUpperCase();
-// console.log(upperCaseStr); 
+//задание 1
 
+// const people = [
+//     { name: 'Глеб', age: 29 },
+//     { name: 'Анна', age: 17 },
+//     { name: 'Олег', age: 7 },
+//     { name: 'Оксана', age: 47 }
+//  ];
+ 
+//  people.sort((a, b) => a.age - b.age);
+//  console.log(people);
 
-// // Задание 2
-// function searchStart(arr, str) {
-//   let result = arr.filter(item => item.toLowerCase().startsWith(str.toLowerCase()));
-//   return result;
-// }
+//задание 2
 
-// console.log(searchStart(['Кошка', 'Кит', 'Комар', 'Носорог'], 'ко')); 
-// console.log(searchStart(['яблоко', 'груша', 'гриб', 'огурец'], 'гру')); 
-// console.log(searchStart(['Дом', 'Банк', 'Больница', 'Театр'], 'Кино')); 
+// function filter(arr, ruleFunction) {
+//     return arr.map(item => {
+//        if (ruleFunction(item)) {
+//           return item;
+//        }
+//     }).filter(Boolean);
+//  }
+ 
+//  function isPositive(num) {
+//     return num > 0;
+//  }
+ 
+//  function isMale(person) {
+//     return person.gender === 'male';
+//  }
+ 
+//  console.log(filter([3, -4, 1, 9], isPositive)); 
+ 
+//  const people = [
+//     {name: 'Глеб', gender: 'male'},
+//     {name: 'Анна', gender: 'female'},
+//     {name: 'Олег', gender: 'male'},
+//     {name: 'Оксана', gender: 'female'}
+//  ];
+ 
+//  console.log(filter(people, isMale)); 
 
+//задание 3
+// let counter = 0;
 
-// // Задание 3
-// let num = 32.58884;
-// console.log(Math.floor(num));
-// console.log(Math.ceil(num)); 
-// console.log(Math.round(num)); 
+// const intervalId = setInterval(() => {
+//    console.log(new Date());
+//    counter += 3;
 
+//    if (counter >= 30) {
+//       clearInterval(intervalId);
+//       console.log('30 секунд прошло');
+//    }
+// }, 3000);
 
-// // Задание 4
-// let numbers = [52, 53, 49, 77, 21, 32];
-// let minNumber = Math.min(...numbers);
-// let maxNumber = Math.max(...numbers);
+//задание 4
 
-// console.log(`Наименьшее число: ${minNumber}`);
-// console.log(`Наибольшее число: ${maxNumber}`);
-
-
-// // Задание 5
-// function getRandomNumber() {
-//   let randomNum = Math.floor(Math.random() * 10) + 1;
-//   console.log(randomNum);
-// }
-
-// getRandomNumber(); // выводит рандомное число от 1 до 10
-
-
-// // Задание 6
-// function getRandomArrNumbers(num) {
-//   let arr = [];
-//   let len = Math.floor(num / 2);
-//   for (let i = 0; i < len; i++) {
-//     arr.push(Math.floor(Math.random() * (num + 1)));
+// function delayForSecond(callback) {
+//     setTimeout(callback, 1000); 
 //   }
-//   return arr;
-// }
+  
+//   delayForSecond(function() {
+//     console.log('Привет, Глеб!');
+//   });
 
-// console.log(getRandomArrNumbers(7)); 
-// console.log(getRandomArrNumbers(12)); 
+//задание 5
 
-
-
-// // Задание 7
-// function getRandomInt(min, max) {
-//   return Math.floor(Math.random() * (max - min + 1)) + min;
-// }
-
-// console.log(getRandomInt(1, 10)); 
-
-
-// // Задание 8
-// let currentDate = new Date();
-// console.log(currentDate.toLocaleString()); 
-
-// // Задание 9
-// let currentDate = new Date();
-// currentDate.setDate(currentDate.getDate() + 73);
-// console.log(currentDate.toLocaleDateString()); 
-
-
-// // Задание 10
-// function formatDate(date) {
-//     const months = [
-//         "января", "февраля", "марта",
-//         "апреля", "мая", "июня", "июля",
-//         "августа", "сентября", "октября",
-//         "ноября", "декабря"
-//     ];
-
-//     const days = [
-//         "воскресенье", "понедельник", "вторник", "среда",
-//         "четверг", "пятница", "суббота"
-//     ];
-
-//     let dayOfWeek = days[date.getDay()];
-//     let dayOfMonth = date.getDate();
-//     let month = months[date.getMonth()];
-//     let year = date.getFullYear();
-
-//     let hours = String(date.getHours()).padStart(2, '0');
-//     let minutes = String(date.getMinutes()).padStart(2, '0');
-//     let seconds = String(date.getSeconds()).padStart(2, '0');
-
-//     return `Дата: ${dayOfMonth} ${month} ${year} - это ${dayOfWeek}. Время: ${hours}:${minutes}:${seconds}`;
-// }
-
-// let date = new Date(); 
-// console.log(formatDate(date));
+// function delayForSecond(cb) {
+//     setTimeout(() => {
+//       if (cb) {
+//         cb();
+//       }
+//       console.log('Прошла одна секунда');
+//     }, 1000);
+//   }
+  
+//   function sayHi(name) {
+//     console.log(`Привет, ${name}!`);
+//   }
+  
+//   delayForSecond(() => sayHi(`Глеб`));
